@@ -10,4 +10,4 @@ RUN echo '<b><font color="magenta">Version 1.0</font></b>' >> /var/www/html/inde
 RUN echo `date` >> /var/www/html/index.html
 
 EXPOSE 80
-CMD ["/usr/bin/apache2ctl","-D","FPREGROUND"]
+CMD CMD /usr/sbin/apache2ctl -D FOREGROUND
